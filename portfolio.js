@@ -114,7 +114,7 @@ const texts = {
 </div>
 
 <div class="about-buttons reveal" style="--d:.8s">
-  <a href="assets/LeonardoAugustoSoaresCurriculum.pdf" download="LeonardoAugustoSoaresCurriculum.pdf" class="btn-secondary" target="_blank">
+  <a href="assets/Leonardo_Soares_Curriculo.pdf" download="Leonardo_Soares_Curriculo.pdf" class="btn-secondary" target="_blank">
     Baixar CV
   </a>
 
@@ -260,9 +260,11 @@ const texts = {
     <span class="year">2025</span>
 
     <ul>
-      <li>🏆 Logic Programming Course - Danki Code</li>
-      <li>💻 Started Web Development Journey</li>
-      <li>🌐 Built First Front-end Projects</li>
+      <li>🏢 Beginning of a Young Apprenticeship in Product Engineering</li>
+      <li>🏆 Completion of the Logic Programming Course - Danki Code</li>
+      <li>💻 Start of the web development journey</li>
+      <li>🏆 Completion of the JavaScript Course - Gustavo Guanabara</li>
+      <li>🌐 Development of the first front-end projects</li>
     </ul>
   </div>
 
@@ -270,11 +272,12 @@ const texts = {
     <span class="year">2026</span>
 
     <ul>
-      <li>Junior Apprentice in Product Engineering at Versigent</li>
-      <li>Full Stack Formation - Rocketseat</li>
-      <li>HelpDesk Full Stack System</li>
-      <li>Refund Management System</li>
-      <li>Vinyl Tracker Platform</li>
+      <li>🎓 Completion of the Full Stack Formation - Rocketseat</li>
+      <li>⭐ Development of the HelpDesk (Full Stack)</li>
+      <li>💰 Development of the Refund System (Full Stack)</li>
+      <li>🎵 Development of the Vinil Tracker (Full Stack)</li>
+      <li>🚀 Currently seeking to evolve as a Full Stack Developer.</li>
+      <li>🎯 Continuous Evolution in React, Node.js, TypeScript and PostgreSQL</li>
     </ul>
   </div>
 
@@ -319,7 +322,13 @@ const texts = {
       arGit: 'GitHub',
       vtDesc: 'Full-stack application for managing vinyl record collections. Allows user registration, CRUD operations for vinyl records, detailed collection statistics, and public sharing via link. Includes interactive graphs for data visualization.',
       vtOpen: 'Open',
-      vtGit: 'GitHub'
+      vtGit: 'GitHub',
+      hdDesc: 'Full-stack help desk system with authentication, ticket management, admin panel, profile control, and complete integration between React, Node.js, Prisma, and PostgreSQL.',
+      hdOpen: 'Open',
+      hdGit: 'GitHub',
+      rfDesc: "Full-stack reimbursement request system with JWT authentication, proof of payment upload, and profile-based access control. Developed with React, Node.js, Prisma, and SQLite, simulating a real corporate workflow.",
+      rfOpen: 'Open',
+      rfGit: 'GitHub'
     },
     contatoTitle: 'Contact Me',
     contatoLabels: { nome: 'Name', email: 'Email', assunto: 'Subject', mensagem: 'Message', enviar: 'Send' }
@@ -380,7 +389,7 @@ function showContent(section) {
 
        <div class="card reveal" data-tech="full" style="--d:.05s">
           <div class="top"><div class="icon"><i class="fa-solid fa-clipboard-list"></i></div>
-          <h3>HelpDesk</h3> <span class="featured-badge">Projeto Destaque</span>
+          <h3>HelpDesk</h3>
           </div>
           <p>${t.cards.hdDesc}</p>
           <div class="chips">
@@ -692,10 +701,6 @@ function showContent(section) {
         </form>
       </div>
       <div class="contact-extra reveal" style="--d:.2s">
-
-  <p class="contact-message">
-    Vamos transformar ideias em soluções? Entre em contato pelo formulário ou através das minhas redes profissionais.
-  </p>
 
   <div class="social-icons">
 
