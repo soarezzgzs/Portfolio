@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />     
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+  name="description"
+  content="Portfólio de Leonardo Soares, Desenvolvedor Full Stack especializado em React, Node.js, TypeScript e PostgreSQL.">
+
+  <title>Leonardo Soares - Portfólio</title
+>
+
+</head>
+<body>
+  <header>
+    <nav class="mobile-only">
+      <ul>
+        <li id="menu">
+          <i class="fa-solid fa-bars"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+<div class="container">
+  <aside class="sidebar desktop-only">
+    <div>
+      <div class="profile">
+        <img class="avatar" src="https://via.placeholder.com/80">
+        <h3>Leonardo Soares</h3>
+        <p>FullStack Developer</p>
+        
+      </div>
+      <ul>
+        <li id="menu-estudos" onclick="showContent('estudos')"><i class="fa-solid fa-user"></i> Quem Sou</li>
+        <li id="menu-projetos" onclick="showContent('projetos')"><i class="fa-solid fa-briefcase"></i> Portfólio</li>
+        <li id="menu-contato" onclick="showContent('contato')"><i class="fa-solid fa-comments"></i> Fale Comigo</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      
+      <!-- Botão de modo escuro/claro -->
+      <button id="theme-toggle" class="btn-cv" style="margin-top:10px;">
+        <i class="fa-solid fa-moon"></i> Tema Claro
+      </button>
+       <br>
+      <!-- Botão de idioma -->
+      <button id="lang-toggle" class="btn-cv" style="margin-top:10px;">
+        <i class="fa-solid fa-language"></i> English
+      </button>
+    </div>
+  </aside>
+
+  <main class="content" id="content-area">
+    <div id="loader" class="loader"></div>
+    <h2 class="reveal" style="--d:0s">Bem-vindo!</h2>
+    <p class="reveal" style="--d:.1s">Clique em um item do menu para ver mais informações.</p>
+  </main>
+</div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>

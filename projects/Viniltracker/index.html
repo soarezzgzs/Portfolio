@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Vinil tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="project-container">
+        <h1 class="project-title">Vinil tracker</h1>
+
+        <section class="project-section">
+            <h2>Contexto</h2>
+            <p>Este projeto foi desenvolvido com o objetivo de criar uma aplicação fullstack que permita aos usuários
+                gerenciar suas coleções de discos de vinil. A plataforma oferece cadastro e login, CRUD completo de
+                vinis e estatísticas detalhadas da coleção, como quantidade total, valor acumulado, artista mais
+                frequente e disco mais caro.
+
+                O frontend foi construído em React com TailwindCSS, garantindo uma interface moderna e responsiva. Para
+                visualização dos dados, foram implementados gráficos interativos com Chart.js. No backend, a API foi
+                desenvolvida em Node.js + Express, utilizando Knex para manipulação de banco de dados. Em
+                desenvolvimento, o projeto usa SQLite, enquanto em produção utiliza PostgreSQL hospedado no Render. O
+                deploy foi realizado com Vercel (frontend) e Render (backend e banco).
+
+                Esse projeto se destaca pela integração completa entre frontend, backend e banco de dados, além da
+                possibilidade de compartilhar a coleção via link público. Ele demonstra habilidades em desenvolvimento
+                fullstack, deploy em nuvem e apresentação de dados de forma clara e interativa.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Desafio</h2>
+            <p>O desafio principal era:</p>
+            <ul>
+                <li>Integração frontend ↔ backend: garantir que as rotas da API estivessem bem definidas e que o React
+                    consumisse os dados corretamente, evitando problemas de tipagem e comunicação.</li>
+                <li>Banco de dados em ambientes diferentes: usar SQLite em desenvolvimento e PostgreSQL em produção
+                    exigiu ajustes nas queries e configuração do Knex para suportar ambos.</li>
+                <li>eploy em múltiplos serviços: configurar Vercel (frontend) e Render (backend + banco) trouxe desafios
+                    de variáveis de ambiente e conexões seguras.</li>
+                <li>Manipulação de dados para gráficos: transformar dados brutos em informações úteis para o Chart.js,
+                    lidando com casos como soma numérica vs concatenação de strings e agrupamento por artista.</li>
+                <li>Autenticação e compartilhamento público: implementar login seguro e ao mesmo tempo permitir links
+                    públicos exigiu atenção para não comprometer a segurança dos dados privados.</li>
+            </ul>
+        </section>
+        <section class="project-section">
+            <h2>Solução</h2>
+            <p>A solução foi implementada utilizando:</p>
+            <ul>
+                <li>Node.js + Express: utilizados para construção do servidor e definição das rotas da API, garantindo
+                    comunicação eficiente entre frontend e backend.</li>
+                <li>Knex.js: escolhido como query builder para facilitar a manipulação do banco de dados e manter o
+                    código mais organizado e escalável.</li>
+                <li>SQLite (desenvolvimento): banco leve e simples para testes locais, permitindo desenvolvimento rápido
+                    sem necessidade de infraestrutura complexa.</li>
+                <li>PostgreSQL (produção): banco robusto e confiável, hospedado no Render, garantindo persistência e
+                    performance em ambiente real.</li>
+                <li>React: framework para construção da interface do usuário, proporcionando uma experiência dinâmica e
+                    responsiva.</li>
+                <li>TailwindCSS: utilizado para estilização rápida e consistente, garantindo uma interface moderna e
+                    adaptável a diferentes dispositivos.</li>
+                <li>Chart.js: biblioteca para criação de gráficos interativos (Bar e Doughnut), permitindo visualização
+                    clara das estatísticas da coleção.</li>
+                <li>Vercel + Render: plataformas de deploy que possibilitaram colocar o frontend e backend em produção,
+                    simulando um ambiente real de aplicação.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Resultado</h2>
+            <p>
+                O sistema está disponível em ambiente de produção e demonstra minha capacidade de criar
+                aplicações fullstack completas, integrando frontend, backend e banco de dados. Ele permite:
+            </p>
+            <ul>
+                <li>Cadastro e login de usuários.</li>
+                <li>CRUD de discos de vinil (adicionar, listar, editar e excluir).</li>
+                <li>Visualização de estatísticas da coleção (quantidade, valor total, artista mais frequente, disco mais
+                    caro).</li>
+                <li>Exibição de gráficos interativos (Bar e Doughnut) com Chart.js.</li>
+                <li>Compartilhamento público da coleção via link acessível sem login.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Aprendizados</h2>
+            <ul>
+                <li>Configuração de ambiente de produção com Vercel e Render.</li>
+                <li>Integração entre frontend (React) e backend (Node.js + Express).</li>
+                <li>Uso de Knex para manipulação de dados em diferentes bancos (SQLite e PostgreSQL).</li>
+                <li>Implementação de autenticação e compartilhamento público de dados.</li>
+                <li>Manipulação e visualização de dados com gráficos interativos usando Chart.js.</li>
+                <li>Estilização moderna e responsiva com TailwindCSS.</li>
+            </ul>
+        </section>
+
+        <div class="project-links">
+        <a href="https://frontend-puce-ten-47.vercel.app" target="_blank" class="btn"><i
+                class="fa-solid fa-up-right-from-square"></i> Ver projeto online</a>
+
+            <a href="https://github.com/soarezzgzs/frontend" target="_blank" class="btn"><i
+                    class="fa-brands fa-github"></i> Ver o GitHub Front-end</a>
+            <a href="https://github.com/soarezzgzs/backend" target="_blank" class="btn"><i
+                    class="fa-brands fa-github"></i> Ver o GitHub Back-end</a>
+        </div>
+
+        <button class="btn-back" onclick="window.location.href='../../index.html'"><i
+                class="fa-solid fa-arrow-left"></i> Voltar</button>
+    </main>
+</body>
+
+</html>

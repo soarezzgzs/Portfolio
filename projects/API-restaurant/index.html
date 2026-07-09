@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <title>API Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="project-container">
+    <h1 class="project-title">API Restaurant</h1>
+
+    <section class="project-section">
+      <h2>Contexto</h2>
+      <p>Projeto desenvolvido em um desafio da <strong>Rocketseat</strong>, com foco exclusivo em <strong>back-end</strong>. O objetivo foi criar uma API para gerenciamento de um restaurante, permitindo operações como cadastro de pratos, categorias e pedidos.</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Desafio</h2>
+      <p>Construir uma API RESTful completa, sem interface visual, mas com rotas bem definidas para manipulação de dados. O foco foi aprender sobre:</p>
+      <ul>
+        <li>Estruturação de rotas e middlewares.</li>
+        <li>Conexão com banco de dados relacional.</li>
+        <li>Criação de migrations e seeds com Knex.</li>
+        <li>Boas práticas com TypeScript.</li>
+      </ul>
+    </section>
+    <section class="project-section">
+      <h2>Solução</h2>
+      <p>A API foi estruturada utilizando Node.js com TypeScript para garantir tipagem e organização do código. O framework Express foi usado para gerenciar as rotas e middlewares, enquanto o Knex.js serviu como query builder para facilitar a comunicação com o banco de dados SQLite3.</p>
+      <ul>
+        <li>Rotas RESTful para pratos, categorias e pedidos.</li>
+        <li>Migrations e seeds com Knex para criar e popular o banco de dados de forma automatizada.</li>
+        <li>Validação de dados e tratamento de erros nas requisições.</li>
+      </ul>
+    </section>
+
+    <section class="project-section">
+      <h2>Resultado</h2>
+      <p>A API permite:</p>
+      <ul>
+        <li>Criar, listar, atualizar e excluir pratos.</li>
+        <li>Organizar pratos por categorias.</li>
+        <li>Gerenciar pedidos de forma estruturada.</li>
+      </ul>
+      </section>
+
+      <section class="project-section">
+        <h2>Como executar localmente</h2>
+        <ol>
+          <li>Clone o repositório do projeto: <code>git clone https://github.com/soarezzgzs/api-restaurant.git</code></li>
+          <li>Entre na pasta do projeto: <code>cd api-restaurant</code></li>
+          <li>Instale as dependências: <code>npm install</code></li>
+          <li>Configure o banco de dados: <code>npm run knex:migrate</code> Opcional: execute os seeds para popular dados iniciais: <code>npm run knex:seed</code></li>
+          <li>Inicie a aplicação local: <code>npm run dev</code></li>
+          <li>Teste a API:
+            O repositório já inclui um arquivo do Insomnia com todas as rotas configuras, basta importar o arquivo no Insomnia para ter acesso às requisições prontas (GET, POST, PUT, DELETE). Assim você pode testar facilmente os endpoints sem precisar configurar manualmente.
+          </li>
+          
+      </section>
+
+      <section class="project-section">
+        <h2>Aprendizados</h2>
+        <ul>
+          <li>Estruturação de projetos em Node.js.</li>
+          <li>Criação de rotas e manipulação de dados no backend.</li>
+          <li>Integração entre frontend e backend em ambiente local.</li>
+        </ul>
+      </section>
+
+      <div class="project-links">
+        <a href="https://github.com/soarezzgzs/api-restaurant" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Ver no GitHub</a>
+      </div>
+
+    <button class="btn-back" onclick="window.location.href='../../index.html'"><i class="fa-solid fa-arrow-left"></i> Voltar</button>
+  </main>
+</body>
+</html>

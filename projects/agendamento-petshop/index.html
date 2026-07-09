@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <title>Agendamento de petshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="project-container">
+    <h1 class="project-title">Agendamento de petshop</h1>
+
+    <section class="project-section">
+      <h2>Contexto</h2>
+      <p>Este projeto foi desenvolvido como parte de um <strong>desafio prático,</strong> com o objetivo de criar um sistema de agendamento para um petshop. A proposta era simular um caso real de uso, onde clientes poderiam marcar horários para serviços como banho, tosa e consultas veterinárias. Diferente dos projetos front-end, aqui o foco foi trabalhar com <strong>Node.js</strong> e compreender melhor o funcionamento de uma aplicação completa, integrando backend e frontend.
+
+O sistema conta com uma <strong>API local</strong> responsável por gerenciar os dados de agendamento, e uma aplicação que consome essa API para exibir e manipular as informações. Para rodar, é necessário iniciar o servidor com npm run server e a aplicação com npm run dev. Essa estrutura reflete o ciclo real de desenvolvimento de sistemas, aproximando-se de cenários corporativos.</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Desafio</h2>
+      <p>O desafio principal era:</p>
+      <ul>
+        <li>Criar uma aplicação que permitisse cadastrar e gerenciar agendamentos.</li>
+        <li>Estruturar o backend em Node.js, garantindo organização e escalabilidade.</li>
+        <li>Simular persistência de dados e fluxo de agendamento em ambiente local.</li>
+      </ul>
+    </section>
+    <section class="project-section">
+      <h2>Solução</h2>
+      <p>A solução foi implementada utilizando:</p>
+      <ul>
+        <li>Node.js: Para construção do servidor e gerenciamento das rotas.</li>
+        <li>JavaScript: Lógica de negócio e manipulação dos dados.</li>
+        <li>JSON Server: Para simular uma API local e persistência de dados.</li>
+        <li>HTML e CSS: Interface simples e funcional para interação com o usuário.</li>
+      </ul>
+    </section>
+
+    <section class="project-section">
+      <h2>Resultado</h2>
+      <p>O sistema funciona localmente e demonstra minha capacidade de criar aplicações completas com backend em Node.js. Ele permite:</p>
+      <ul>
+        <li>Cadastrar novos agendamentos.</li>
+        <li>Listar e gerenciar horários disponíveis.</li>
+        <li>Simular fluxo de atendimento em um petshop.</li>
+      </ul>
+      </section>
+
+      <section class="project-section">
+        <h2>Como executar localmente</h2>
+        <ol>
+          <li>Clone o repositório do projeto: <code>git clone https://github.com/soarezzgzs/agendamento-petshop.git</code></li>
+          <li>Instale as dependências: <code>npm install</code></li>
+          <li>Inicie a API local: <code>npm run server</code></li>
+          <li>Inicie a aplicação local: <code>npm run dev</code></li>
+          <li>Abra o navegador e navegue para <code>http://localhost:3000</code></li>
+      </section>
+
+      <section class="project-section">
+        <h2>Aprendizados</h2>
+        <ul>
+          <li>Estruturação de projetos em Node.js.</li>
+          <li>Criação de rotas e manipulação de dados no backend.</li>
+          <li>Integração entre frontend e backend em ambiente local.</li>
+        </ul>
+      </section>
+
+      <section class="project-section">
+        <h2>Capturas de Tela</h2>
+        <p>Abaixo estão algumas capturas de tela do projeto em funcionamento:</p>
+        <img src="../../assets/app-interface.jpeg" alt="Tela inicial do sistema" width="600" class="project-img-mobile" >
+        <img src="../../assets/schedule-modal.jpeg" alt="Formulário de agendamento" width="600" class="project-img-mobile" >
+        <img src="../../assets/daily-schedule.jpeg" alt="Lista de agendamentos" width="600" class="project-img-mobile" >
+      </section>
+
+      <div class="project-links">
+        <a href="https://github.com/soarezzgzs/petshop-scheduler" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Ver no GitHub</a>
+      </div>
+
+    <button class="btn-back" onclick="window.location.href='../../index.html'"><i class="fa-solid fa-arrow-left"></i> Voltar</button>
+  </main>
+</body>
+</html>

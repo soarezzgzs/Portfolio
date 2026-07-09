@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Refund 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="project-container">
+        <h1 class="project-title">Refund 2.0</h1>
+
+<p class="project-status">
+    ⚠️ Projeto disponível para execução local via GitHub.
+</p>
+
+<section class="project-section">
+    <h2>Contexto</h2>
+
+    <p>
+        O Refund é uma aplicação Full Stack para gerenciamento de solicitações
+        de reembolso, desenvolvida para simular fluxos corporativos reais.
+        O sistema permite que funcionários enviem solicitações de reembolso
+        com comprovantes anexados, enquanto gerentes acompanham, filtram e
+        visualizam os pedidos através de um painel administrativo.
+
+        O frontend foi desenvolvido utilizando React, TypeScript, Vite e
+        TailwindCSS, proporcionando uma interface moderna e responsiva.
+        Já o backend foi construído com Node.js, Express, Prisma ORM e SQLite,
+        implementando autenticação JWT, upload de arquivos e controle de
+        permissões por perfil.
+
+        O projeto demonstra a integração completa entre frontend, backend,
+        banco de dados e armazenamento de arquivos, simulando um ambiente
+        próximo ao encontrado em aplicações corporativas.
+    </p>
+</section>
+
+        <section class="project-section">
+    <h2>Desafio</h2>
+
+    <p>Os principais desafios encontrados durante o desenvolvimento foram:</p>
+
+    <ul>
+        <li>
+            Implementar autenticação segura utilizando JWT e persistência de sessão.
+        </li>
+
+        <li>
+            Criar controle de acesso baseado em perfis diferentes
+            (Employee e Manager).
+        </li>
+
+        <li>
+            Desenvolver um fluxo completo de solicitação de reembolso
+            envolvendo cadastro, upload de comprovantes e acompanhamento.
+        </li>
+
+        <li>
+            Implementar upload de arquivos utilizando Multer e disponibilização
+            segura dos comprovantes enviados.
+        </li>
+
+        <li>
+            Garantir comunicação eficiente entre React e API REST através do Axios.
+        </li>
+
+        <li>
+            Implementar paginação e filtros para melhorar a experiência dos gestores.
+        </li>
+    </ul>
+</section>
+
+        <section class="project-section">
+    <h2>Solução</h2>
+
+    <p>A solução foi implementada utilizando:</p>
+
+    <ul>
+        <li>
+            <strong>React + TypeScript:</strong> construção da interface utilizando componentes reutilizáveis.
+        </li>
+
+        <li>
+            <strong>React Router:</strong> gerenciamento das rotas da aplicação.
+        </li>
+
+        <li>
+            <strong>TailwindCSS:</strong> estilização responsiva seguindo abordagem Mobile First.
+        </li>
+
+        <li>
+            <strong>Axios:</strong> comunicação entre frontend e backend.
+        </li>
+
+        <li>
+            <strong>Node.js + Express:</strong> desenvolvimento da API REST.
+        </li>
+
+        <li>
+            <strong>Prisma ORM:</strong> manipulação segura do banco de dados.
+        </li>
+
+        <li>
+            <strong>SQLite:</strong> persistência dos dados da aplicação.
+        </li>
+
+        <li>
+            <strong>JWT:</strong> autenticação e controle de acesso baseado em perfil.
+        </li>
+
+        <li>
+            <strong>Multer:</strong> upload e gerenciamento dos comprovantes enviados pelos usuários.
+        </li>
+    </ul>
+</section>
+
+
+        <section class="project-section">
+    <h2>Resultado</h2>
+
+    <p>
+        O sistema foi concluído com sucesso e permite a realização completa
+        do fluxo de reembolso dentro da aplicação.
+    </p>
+
+    <ul>
+        <li>Cadastro e autenticação de usuários.</li>
+
+        <li>Controle de acesso por perfil (Funcionário e Gerente).</li>
+
+        <li>Criação de solicitações de reembolso.</li>
+
+        <li>Upload de comprovantes fiscais.</li>
+
+        <li>Consulta e visualização detalhada das solicitações.</li>
+
+        <li>Listagem paginada para gestores.</li>
+
+        <li>Pesquisa e filtros de reembolso.</li>
+
+        <li>Persistência segura dos dados utilizando Prisma ORM.</li>
+
+        <li>Interface responsiva para dispositivos móveis e desktop.</li>
+    </ul>
+</section>
+
+<section class="project-section">
+        <h2>Como executar localmente</h2>
+        <ol>
+          <li>Clone o repositório do projeto: <code>git clone https://github.com/soarezzgzs/web.git</code></li>
+          <li>Entre na pasta do backend: <code>cd fullstack_refund_api-main</code></li>
+          <li>Instale as dependências: <code>npm install</code></li>
+          <li>Inicie a API local: <code>npm run dev</code></li>
+          <li>Saia da pasta do backend: <code>cd ..</code></li>
+          <li>Entre na pasta do frontend: <code>cd web</code></li>
+          <li>Inicie a aplicação local: <code>npm run dev</code></li>
+          <li>Abra o navegador e navegue para <code>http://localhost:5173</code></li>
+      </section>
+
+        <section class="project-section">
+    <h2>Aprendizados</h2>
+
+    <ul>
+        <li>Implementação de autenticação JWT em aplicações Full Stack.</li>
+
+        <li>Gerenciamento de estado de autenticação utilizando Context API.</li>
+
+        <li>Controle de permissões baseado em perfis de usuário.</li>
+
+        <li>Upload e armazenamento de arquivos utilizando Multer.</li>
+
+        <li>Integração entre React, Axios e APIs REST.</li>
+
+        <li>Validação de formulários com Zod.</li>
+
+        <li>Organização de projetos utilizando arquitetura modular.</li>
+
+        <li>Manipulação de banco de dados através do Prisma ORM.</li>
+
+        <li>Desenvolvimento de aplicações corporativas baseadas em regras de negócio reais.</li>
+    </ul>
+</section>
+
+<section class="project-section">
+        <h2>Capturas de Tela</h2>
+        <p>Abaixo estão algumas capturas de tela do projeto em funcionamento:</p>
+        <img src="../../assets/refund-login.png" alt="Tela de login" width="600" class="project-img-mobile" >
+        <img src="../../assets/refund-cadastro.png" alt="Formulário de cadastro" width="600" class="project-img-mobile" >
+        <img src="../../assets/refund-lista.png" alt="Lista de solicitações" width="600" class="project-img-mobile" >
+        <img src="../../assets/refund-detalhe.png" alt="Detalhes da solicitação" width="600" class="project-img-mobile" >
+      </section>
+
+        <div class="project-links">
+
+    <a href="https://github.com/soarezzgzs/web" target="_blank" class="btn">
+        <i class="fa-brands fa-github"></i>
+        Visualizar no Github
+    </a>
+
+</div>
+
+        <button class="btn-back" onclick="window.location.href='../../index.html'"><i
+                class="fa-solid fa-arrow-left"></i> Voltar</button>
+    </main>
+</body>
+
+</html>
